@@ -1,0 +1,25 @@
+{
+  "name": "ad-dna-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "fastify": "^4.25.2",
+    "@fastify/cors": "^8.5.0",
+    "@fastify/multipart": "^8.1.0",
+    "sharp": "^0.33.1",
+    "imghash": "^0.0.3",
+    "colorthief": "^2.4.0",
+    "tesseract.js": "^5.0.4",
+    "canvas": "^2.11.2",
+    "qrcode": "^1.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/qrcode": "^1.5.5",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0"
+  }
+}
