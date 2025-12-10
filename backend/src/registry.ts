@@ -26,6 +26,14 @@ class FingerprintRegistry {
     return Array.from(this.registry.values());
   }
 
+  incrementVerificationCount(): void {
+    this.verificationCount++;
+  }
+
+  incrementTamperFlagCount(): void {
+    this.tamperFlagCount++;
+  }
+
   getStats() {
     const all = this.getAll();
     return {
