@@ -1,7 +1,10 @@
 declare module 'imghash' {
-  function hash(filepath: string | Buffer, bits?: number, format?: 'hex' | 'binary'): Promise<string>;
-  function hexToBinary(hex: string): string;
-  function binaryToHex(binary: string): string;
+  interface ImgHash {
+    hash(filepath: string | Buffer, bits?: number, format?: 'hex' | 'binary'): Promise<string>;
+    hexToBinary(hex: string): string;
+    binaryToHex(binary: string): string;
+  }
   
-  export = hash;
+  const imghash: ImgHash;
+  export default imghash;
 }
