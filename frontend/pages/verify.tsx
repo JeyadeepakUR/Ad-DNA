@@ -64,11 +64,7 @@ export default function VerifyPage() {
 
       try {
         const API_BASE = process.env.NEXT_PUBLIC_API_BASE || 'http://localhost:3001';
-        const response = await fetch(`${API_BASE}/verify`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ dna })
-        });
+        const response = await fetch(`${API_BASE}/verify-dna?dna=${encodeURIComponent(dna)}`);
 
         if (!response.ok) {
           throw new Error(`Verification failed: ${response.statusText}`);

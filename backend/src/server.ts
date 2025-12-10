@@ -4,6 +4,7 @@ import multipart from '@fastify/multipart';
 import uploadRoute from './routes/upload';
 import generateDnaRoute from './routes/generate-dna';
 import verifyRoute from './routes/verify';
+import verifyDnaRoute from './routes/verify-dna';
 import phishingCheckRoute from './routes/phishing-check';
 import removeDnaRoute from './routes/remove-dna';
 import statsRoute from './routes/stats';
@@ -28,6 +29,7 @@ server.register(multipart, {
 server.register(uploadRoute);
 server.register(generateDnaRoute);
 server.register(verifyRoute);
+server.register(verifyDnaRoute);
 server.register(phishingCheckRoute);
 server.register(removeDnaRoute);
 server.register(statsRoute);
