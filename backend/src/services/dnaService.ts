@@ -1,5 +1,5 @@
 import crypto from 'crypto';
-import { DNAFingerprint, VerificationResult, ComplianceSummary, ComplianceLevel } from '../../../shared/types';
+import { DNAFingerprint, VerificationResult, ComplianceSummary, ComplianceLevel } from '../types/shared';
 import registry from '../registry';
 import * as imghash from 'imghash';
 import { createWorker } from 'tesseract.js';

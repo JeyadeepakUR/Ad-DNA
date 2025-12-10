@@ -1,4 +1,4 @@
-import { DNAFingerprint } from '../../shared/types';
+import { DNAFingerprint } from './types/shared';
 
 class FingerprintRegistry {
   private registry: Map<string, DNAFingerprint> = new Map();
